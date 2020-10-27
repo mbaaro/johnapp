@@ -14,4 +14,14 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-label inline>Setting Name:</ion-label>
+    <ion-input [(NgModel)]="name" name="name" placeholder="enter name"></ion-input>
+
+    <ion-label>Message:</ion-label>
+      <ion-input [(NgModel)]="message" name="message" placeholder="enter password"></ion-input>
+
+      <ion-label>Number:</ion-label>
+        <ion-input [(NgModel)]="number" name="number" placeholder="set number"></ion-input>
+
+<ion-button type="submit" name="save" (ionFocus)="savesetting()">Create</ion-button>
 </ion-content>

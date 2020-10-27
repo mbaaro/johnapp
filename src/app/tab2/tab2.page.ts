@@ -9,6 +9,10 @@ import { DataprovService } from '../dataprov.service';
 })
 export class Tab2Page {
 //password:string;
+message:string;
+name:string;
+number:string;
+
   constructor(private alertcontroller:AlertController,private dataprov:DataprovService ) {
 this.verifyuser();
 console.log(this.dataprov.password);
@@ -46,5 +50,10 @@ const alert = await this.alertcontroller.create({
   });
 
   await alert.present();
+  }
+
+  savesetting(){
+console.log("hello"+this.number);
+
   }
 }
